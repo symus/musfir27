@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Musfir's Birthday Countdown!</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🎉 Countdown for Musfir's Birthday! 🎂</h1>
+      <div class="countdown-container">
+        <div id="countdown" aria-live="polite" aria-atomic="true">
+          <span id="days">--</span> Days 
+          <span id="hours">--</span> Hours 
+          <span id="minutes">--</span> Minutes 
+          <span id="seconds">--</span> Seconds
+        </div>
+        <button id="playRandomMusic" aria-label="Play random happy birthday music">🎵 Play Music</button>
+      </div>
+    </header>
+
+    <main>
+      <section id="birthdayMessage" class="hidden">
+        <h2>🎈 Happy Birthday Musfir! 🎈</h2>
+        <p>You make our life brighter and full of smiles! Have a wonderful day! 🎉</p>
+        <div class="gifts">
+          <img src="1.jpg" alt="Gift 1" data-gift="Your first gift is under the sofa!" />
+          <img src="2.jpg" alt="Gift 2" data-gift="Your second gift is near the chair!" />
+          <img src="3.jpg" alt="Gift 3" data-gift="Your third gift is inside the toy box!" />
+          <img src="4.jpg" alt="Gift 4" data-gift="Your fourth gift is behind the curtains!" />
+          <img src="5.jpg" alt="Gift 5" data-gift="Your fifth gift is in the kitchen drawer!" />
+          <img src="6.jpeg" alt="Gift 6" data-gift="Your sixth gift is on the window sill!" />
+        </div>
+      </section>
+
+      <div class="buttons">
+        <button id="toggleBalloons">Start Balloons</button>
+        <button id="playHbdMusic">Play Birthday Song</button>
+      </div>
+    </main>
+  </div>
+
+  <!-- Popup -->
+  <div id="popup" class="popup hidden" role="dialog" aria-modal="true">
+    <div class="popup-content">
+      <p id="popupMessage"></p>
+      <button id="popupOk">OK</button>
+    </div>
+  </div>
+
+  <!-- Balloon container -->
+  <div id="balloon-container"></div>
+
+  <script src="script.js"></script>
+</body>
+            </html>
